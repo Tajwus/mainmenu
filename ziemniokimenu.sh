@@ -8,7 +8,7 @@ function z1 {
       mkdir -p /opt/minecraft/server
       echo "eula=true" > /opt/minecraft/server/eula.txt
 
-      wget https://github.com/Tajwus/ziemniokimenu/archive/refs/tags/scripts.tar.gz
+      wget https://github.com/Tajwus/ziemniokimenu/archive/refs/tags/scripts_v0.1.tar.gz
       tar -zxf scripts.tar.gz
       cd ziemniokimenu-scripts
       mv start.sh server.properties server-icon.png /opt/minecraft/server
