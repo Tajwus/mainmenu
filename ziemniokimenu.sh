@@ -9,14 +9,14 @@ function z1 {
       echo "eula=true" > /opt/minecraft/server/eula.txt
 
       wget https://github.com/Tajwus/ziemniokimenu/archive/refs/tags/scripts_v0.1.tar.gz
-      tar -zxf scripts.tar.gz
+      tar -zxf scripts_v0.1.tar.gz
       cd ziemniokimenu-scripts
       mv start.sh server.properties server-icon.png /opt/minecraft/server
       chmod +x /opt/minecraft/server/start.sh
       mv * /opt/minecraft/scripts
       chmod +x -R /opt/minecraft/scripts
       cd ..
-      rm -rf ziemniokimenu-scripts scripts.tar.gz
+      rm -rf ziemniokimenu-scripts scripts_v0.1.tar.gz
 
       crontab -l > mycron
       echo "0 4 * * * /opt/minecraft/scripts/backup.sh" >> mycron
